@@ -60,7 +60,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-gray-800 dark:to-gray-700">
+    <section id="contact" className="py-20 bg-gradient-to-br from-orange-50 via-red-50 to-rose-50 dark:from-gray-800 dark:via-slate-900 dark:to-gray-700">
       <div className="container mx-auto px-6">
         <motion.div
           initial="initial"
@@ -114,7 +114,7 @@ export default function ContactSection() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-lg"
+            className="glass-light dark:glass-dark p-8 rounded-xl shadow-lg"
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-6">

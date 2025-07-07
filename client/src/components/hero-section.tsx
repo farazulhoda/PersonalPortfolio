@@ -18,7 +18,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="pt-20 pb-12 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-gray-900 dark:to-gray-800">
+    <section id="home" className="pt-20 pb-12 bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 dark:from-gray-900 dark:via-slate-800 dark:to-gray-700">
       <div className="container mx-auto px-6 py-12">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -82,12 +82,14 @@ export default function HeroSection() {
             animate="animate"
             className="relative"
           >
-            <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
-              alt="Professional workspace"
-              className="rounded-2xl shadow-2xl w-full h-auto"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl" />
+            <div className="glass-light dark:glass-dark p-4 rounded-3xl shadow-2xl">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
+                alt="Professional workspace"
+                className="rounded-2xl shadow-lg w-full h-auto"
+              />
+              <div className="absolute inset-4 bg-gradient-to-t from-black/20 to-transparent rounded-2xl" />
+            </div>
           </motion.div>
         </div>
       </div>

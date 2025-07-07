@@ -83,7 +83,7 @@ export default function ProjectsSection() {
     : projects.filter(project => project.category === activeFilter);
 
   return (
-    <section id="projects" className="py-20 bg-white dark:bg-gray-900">
+    <section id="projects" className="py-20 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 dark:from-gray-900 dark:via-slate-900 dark:to-gray-800">
       <div className="container mx-auto px-6">
         <motion.div
           initial="initial"
@@ -107,8 +107,8 @@ export default function ProjectsSection() {
                 onClick={() => setActiveFilter(filter)}
                 className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
                   activeFilter === filter
-                    ? "bg-accent text-white hover:bg-blue-600"
-                    : "bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-600"
+                    ? "bg-accent text-white hover:bg-blue-600 shadow-lg"
+                    : "glass-light dark:glass-dark text-slate-700 dark:text-slate-300 hover:shadow-lg"
                 }`}
               >
                 {filter}
@@ -129,7 +129,7 @@ export default function ProjectsSection() {
               key={project.id}
               variants={fadeInUp}
               whileHover={{ y: -5 }}
-              className="project-card bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group"
+              className="project-card glass-light dark:glass-dark rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group"
             >
               <div className="relative overflow-hidden">
                 <img

@@ -25,7 +25,7 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-gray-900 transition-colors duration-300">
+    <div className="min-h-screen bg-gradient-to-br from-slate-100 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-slate-900 dark:to-gray-800 transition-colors duration-300">
       <Navigation />
       <HeroSection />
       <AboutSection />

@@ -4,7 +4,7 @@ import { fadeInUp, fadeInLeft, fadeInRight } from "@/lib/animations";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 bg-white dark:bg-gray-900">
+    <section id="about" className="py-20 bg-gradient-to-br from-slate-50 via-gray-50 to-zinc-50 dark:from-gray-900 dark:via-slate-900 dark:to-gray-800">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -68,7 +68,7 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, x: 0, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
-              className="absolute -bottom-6 -right-6 bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg"
+              className="absolute -bottom-6 -right-6 glass-light dark:glass-dark p-6 rounded-lg shadow-lg"
             >
               <div className="text-center">
                 <div className="text-3xl font-bold text-accent">91</div>

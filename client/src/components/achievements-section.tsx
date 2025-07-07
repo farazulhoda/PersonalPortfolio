@@ -35,7 +35,7 @@ export default function AchievementsSection() {
   ];
 
   return (
-    <section id="achievements" className="py-20 bg-white dark:bg-gray-900">
+    <section id="achievements" className="py-20 bg-gradient-to-br from-purple-50 via-pink-50 to-rose-50 dark:from-gray-900 dark:via-slate-900 dark:to-gray-900">
       <div className="container mx-auto px-6">
         <motion.div
           initial="initial"
@@ -64,7 +64,7 @@ export default function AchievementsSection() {
               key={achievement.title}
               variants={fadeInUp}
               whileHover={{ y: -5 }}
-              className="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl text-center group hover:shadow-lg transition-all duration-300"
+              className="glass-light dark:glass-dark p-6 rounded-xl text-center group hover:shadow-lg transition-all duration-300"
             >
               <div className={`w-16 h-16 bg-${achievement.color}-100 dark:bg-${achievement.color}-900/30 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                 <achievement.icon

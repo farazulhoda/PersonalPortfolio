@@ -71,7 +71,7 @@ export default function SkillsSection() {
   );
 
   return (
-    <section id="skills" className="py-20 bg-slate-50 dark:bg-gray-800">
+    <section id="skills" className="py-20 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-900 dark:via-slate-800 dark:to-gray-900">
       <div className="container mx-auto px-6">
         <motion.div
           initial="initial"
@@ -100,7 +100,7 @@ export default function SkillsSection() {
               key={category.title}
               variants={fadeInUp}
               whileHover={{ y: -5 }}
-              className="bg-white dark:bg-slate-700 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="glass-light dark:glass-dark p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <div className="text-center mb-8">
                 <div className={`w-16 h-16 bg-${category.color}-100 dark:bg-${category.color}-900/30 rounded-full flex items-center justify-center mx-auto mb-4`}>

@@ -39,8 +39,8 @@ export default function Navigation() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-sm" : "bg-white/80 dark:bg-gray-900/80 backdrop-blur-md"
-      } border-b border-slate-200 dark:border-gray-700`}
+        isScrolled ? "glass-nav dark:glass-nav-dark shadow-lg" : "glass-nav dark:glass-nav-dark"
+      }`}
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
@@ -83,7 +83,7 @@ export default function Navigation() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               onClick={toggleTheme}
-              className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-accent transition-colors duration-300"
+              className="p-2 rounded-lg glass-light dark:glass-dark text-slate-600 dark:text-slate-300 hover:text-accent transition-colors duration-300"
               aria-label="Toggle theme"
             >
               {theme === "light" ? <Moon size={18} /> : <Sun size={18} />}
@@ -103,7 +103,7 @@ export default function Navigation() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="md:hidden mt-4 py-4 border-t border-slate-200 dark:border-gray-700"
+            className="md:hidden mt-4 py-4 glass-light dark:glass-dark rounded-lg"
           >
             {navItems.map((item) => (
               <button
