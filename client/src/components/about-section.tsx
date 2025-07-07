@@ -16,9 +16,9 @@ export default function AboutSection() {
             <motion.div variants={fadeInLeft} className="space-y-4">
               <h2 className="text-4xl font-bold text-primary dark:text-white">About Me</h2>
               <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-                I'm a passionate cybersecurity professional with expertise in vulnerability management, penetration testing, 
-                cloud security, and threat intelligence. My journey began with a fascination for protecting digital assets 
-                and staying ahead of evolving cyber threats.
+                I'm MR. BiNARY - a passionate cybersecurity professional and Arctic Code Vault Contributor with 91 GitHub followers. 
+                Master's in Computer Science from Illinois Institute of Technology with specialization in Information Security. 
+                My expertise spans vulnerability management, DevSecOps, and system administration with a strong preference on tabs over spaces!
               </p>
             </motion.div>
 
@@ -71,8 +71,8 @@ export default function AboutSection() {
               className="absolute -bottom-6 -right-6 bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold text-accent">95%</div>
-                <div className="text-sm text-slate-600 dark:text-slate-300">Incident Detection Rate</div>
+                <div className="text-3xl font-bold text-accent">91</div>
+                <div className="text-sm text-slate-600 dark:text-slate-300">GitHub Followers</div>
               </div>
             </motion.div>
           </motion.div>

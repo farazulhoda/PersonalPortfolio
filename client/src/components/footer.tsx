@@ -47,6 +47,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {[
                 { name: "About", id: "about" },
+                { name: "Achievements", id: "achievements" },
                 { name: "Skills", id: "skills" },
                 { name: "Projects", id: "projects" },
                 { name: "Contact", id: "contact" },
@@ -74,7 +75,7 @@ export default function Footer() {
           </div>
         </motion.div>
         <div className="border-t border-slate-600 dark:border-slate-700 mt-8 pt-8 text-center text-slate-300 dark:text-slate-400">
-          <p>&copy; 2024 Farazul Hoda. All rights reserved.</p>
+          <p>&copy; 2025 Farazul Hoda. All rights reserved.</p>
         </div>
       </div>
     </footer>

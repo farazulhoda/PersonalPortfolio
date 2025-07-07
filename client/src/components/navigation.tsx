@@ -28,6 +28,7 @@ export default function Navigation() {
   const navItems = [
     { name: "Home", id: "home" },
     { name: "About", id: "about" },
+    { name: "Achievements", id: "achievements" },
     { name: "Skills", id: "skills" },
     { name: "Projects", id: "projects" },
     { name: "Contact", id: "contact" },

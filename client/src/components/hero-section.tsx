@@ -33,8 +33,10 @@ export default function HeroSection() {
                 <br />& Network Admin
               </h1>
               <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
-                I help organizations fortify their defenses and stay ahead of cyber threats.
-                Specializing in vulnerability management, penetration testing, and cloud security.
+                System Administrator | DevSecOps | Information Security Professional
+                <br />
+                I help organizations fortify their defenses and stay ahead of cyber threats through 
+                code, automation, and strategic security implementations.
               </p>
             </motion.div>
 
