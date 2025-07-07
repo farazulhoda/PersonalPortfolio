@@ -18,7 +18,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="pt-20 pb-12 hero-gradient">
+    <section id="home" className="pt-20 pb-12 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-6 py-12">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -27,14 +27,14 @@ export default function HeroSection() {
             className="space-y-8"
           >
             <motion.div variants={fadeInLeft} className="space-y-4">
-              <h1 className="text-5xl lg:text-6xl font-bold text-primary leading-tight">
-                Creative
-                <span className="text-accent"> Designer</span>
-                <br />& Developer
+              <h1 className="text-5xl lg:text-6xl font-bold text-primary dark:text-white leading-tight">
+                Cybersecurity
+                <span className="text-accent"> Professional</span>
+                <br />& Network Admin
               </h1>
-              <p className="text-xl text-slate-600 leading-relaxed">
-                I craft digital experiences that blend creativity with functionality.
-                Specializing in modern web design and user-centered development.
+              <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
+                I help organizations fortify their defenses and stay ahead of cyber threats.
+                Specializing in vulnerability management, penetration testing, and cloud security.
               </p>
             </motion.div>
 
@@ -48,7 +48,7 @@ export default function HeroSection() {
               <Button
                 variant="outline"
                 onClick={handleDownloadCV}
-                className="border-slate-300 text-slate-700 hover:bg-slate-100 px-8 py-3 font-medium transform hover:scale-105 transition-all duration-300"
+                className="border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 px-8 py-3 font-medium transform hover:scale-105 transition-all duration-300"
               >
                 <Download className="mr-2 h-4 w-4" />
                 Download CV
@@ -57,14 +57,14 @@ export default function HeroSection() {
 
             <motion.div variants={fadeInUp} className="flex space-x-6">
               {[
-                { icon: Linkedin, href: "#" },
-                { icon: Github, href: "#" },
-                { icon: Dribbble, href: "#" },
-                { icon: SiBehance, href: "#" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/farazul-hoda" },
+                { icon: Github, href: "https://github.com/farazulhoda" },
               ].map((social, index) => (
                 <motion.a
                   key={index}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.2, y: -2 }}
                   className="text-slate-400 hover:text-accent transition-colors duration-300"
                 >

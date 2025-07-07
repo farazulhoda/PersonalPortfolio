@@ -10,58 +10,58 @@ export default function ProjectsSection() {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with modern UI/UX, payment integration, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-      technologies: ["React", "Node.js"],
-      category: "Development",
+      title: "Security Infrastructure Modernization",
+      description: "Led the deployment of Microsoft Sentinel and Defender platforms, enhancing organization's security posture and threat detection capabilities.",
+      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+      technologies: ["Microsoft Sentinel", "Microsoft Defender"],
+      category: "Security",
       year: "2024",
       github: "#",
       demo: "#",
     },
     {
       id: 2,
-      title: "Design System",
-      description: "Comprehensive design system for a fintech startup including components, guidelines, and documentation.",
-      image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-      technologies: ["Figma", "React"],
-      category: "Web Design",
+      title: "Endpoint Management System",
+      description: "Implemented Microsoft Intune and Autopilot for endpoint detection and response, improving security practices and device management.",
+      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+      technologies: ["Microsoft Intune", "Autopilot"],
+      category: "Infrastructure",
       year: "2023",
       github: "#",
       demo: "#",
     },
     {
       id: 3,
-      title: "Analytics Dashboard",
-      description: "Real-time analytics dashboard with data visualization, reporting, and user management features.",
+      title: "SIEM Implementation",
+      description: "Deployed and managed Splunk for log management and security event monitoring, developing alerts and dashboards for enhanced threat detection.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-      technologies: ["Vue.js", "Firebase"],
-      category: "Development",
-      year: "2023",
+      technologies: ["Splunk", "EDR"],
+      category: "Security",
+      year: "2022",
       github: "#",
       demo: "#",
     },
     {
       id: 4,
-      title: "Mobile App",
-      description: "Social networking mobile app with messaging, media sharing, and community features.",
-      image: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-      technologies: ["React Native", "UI/UX"],
-      category: "Mobile",
-      year: "2024",
+      title: "Network Security Analysis",
+      description: "Conducted comprehensive network traffic analysis using Wireshark, identifying network anomalies and resolving security incidents.",
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+      technologies: ["Wireshark", "Network Analysis"],
+      category: "Analysis",
+      year: "2022",
       github: "#",
       demo: "#",
     },
   ];
 
-  const filters = ["All", "Web Design", "Development", "Mobile"];
+  const filters = ["All", "Security", "Infrastructure", "Analysis"];
 
   const filteredProjects = activeFilter === "All" 
     ? projects 
     : projects.filter(project => project.category === activeFilter);
 
   return (
-    <section id="projects" className="py-20 bg-white">
+    <section id="projects" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-6">
         <motion.div
           initial="initial"
@@ -70,11 +70,11 @@ export default function ProjectsSection() {
           variants={staggerContainer}
           className="text-center mb-16"
         >
-          <motion.h2 variants={fadeInUp} className="text-4xl font-bold text-primary mb-4">
+          <motion.h2 variants={fadeInUp} className="text-4xl font-bold text-primary dark:text-white mb-4">
             Featured Projects
           </motion.h2>
-          <motion.p variants={fadeInUp} className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
-            A selection of my recent work showcasing design and development expertise
+          <motion.p variants={fadeInUp} className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-8">
+            A selection of my recent cybersecurity work showcasing technical expertise and problem-solving skills
           </motion.p>
 
           <motion.div variants={fadeInUp} className="flex flex-wrap justify-center gap-4 mb-8">
@@ -86,7 +86,7 @@ export default function ProjectsSection() {
                 className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
                   activeFilter === filter
                     ? "bg-accent text-white hover:bg-blue-600"
-                    : "bg-slate-200 text-slate-700 hover:bg-slate-300"
+                    : "bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-600"
                 }`}
               >
                 {filter}
@@ -107,7 +107,7 @@ export default function ProjectsSection() {
               key={project.id}
               variants={fadeInUp}
               whileHover={{ y: -5 }}
-              className="project-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group"
+              className="project-card bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group"
             >
               <div className="relative overflow-hidden">
                 <img
@@ -127,8 +127,8 @@ export default function ProjectsSection() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-primary mb-2">{project.title}</h3>
-                <p className="text-slate-600 mb-4">{project.description}</p>
+                <h3 className="text-xl font-semibold text-primary dark:text-white mb-2">{project.title}</h3>
+                <p className="text-slate-600 dark:text-slate-300 mb-4">{project.description}</p>
                 <div className="flex items-center justify-between">
                   <div className="flex space-x-4">
                     <motion.a
@@ -146,7 +146,7 @@ export default function ProjectsSection() {
                       <Github size={20} />
                     </motion.a>
                   </div>
-                  <span className="text-sm text-slate-500">{project.year}</span>
+                  <span className="text-sm text-slate-500 dark:text-slate-400">{project.year}</span>
                 </div>
               </div>
             </motion.div>

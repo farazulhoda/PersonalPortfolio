@@ -11,7 +11,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-primary text-white py-12">
+    <footer className="bg-primary dark:bg-gray-900 text-white py-12">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -20,22 +20,22 @@ export default function Footer() {
           className="grid md:grid-cols-3 gap-8"
         >
           <div>
-            <div className="text-2xl font-bold mb-4">Alex Johnson</div>
-            <p className="text-slate-300 mb-4">
-              Creative designer and developer crafting digital experiences that matter.
+            <div className="text-2xl font-bold mb-4">Farazul Hoda</div>
+            <p className="text-slate-300 dark:text-slate-400 mb-4">
+              Cybersecurity professional protecting digital assets and staying ahead of cyber threats.
             </p>
             <div className="flex space-x-4">
               {[
-                { icon: Linkedin, href: "#" },
-                { icon: Github, href: "#" },
-                { icon: Dribbble, href: "#" },
-                { icon: SiBehance, href: "#" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/farazul-hoda" },
+                { icon: Github, href: "https://github.com/farazulhoda" },
               ].map((social, index) => (
                 <motion.a
                   key={index}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.2, y: -2 }}
-                  className="text-slate-300 hover:text-white transition-colors duration-300"
+                  className="text-slate-300 dark:text-slate-400 hover:text-white transition-colors duration-300"
                 >
                   <social.icon size={20} />
                 </motion.a>
@@ -54,7 +54,7 @@ export default function Footer() {
                 <li key={link.id}>
                   <button
                     onClick={() => scrollToSection(link.id)}
-                    className="text-slate-300 hover:text-white transition-colors duration-300"
+                    className="text-slate-300 dark:text-slate-400 hover:text-white transition-colors duration-300"
                   >
                     {link.name}
                   </button>
@@ -65,16 +65,16 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
-              {["Web Design", "Frontend Development", "UI/UX Design", "Design Systems"].map((service) => (
+              {["Cybersecurity", "Vulnerability Management", "Penetration Testing", "Cloud Security"].map((service) => (
                 <li key={service}>
-                  <span className="text-slate-300">{service}</span>
+                  <span className="text-slate-300 dark:text-slate-400">{service}</span>
                 </li>
               ))}
             </ul>
           </div>
         </motion.div>
-        <div className="border-t border-slate-600 mt-8 pt-8 text-center text-slate-300">
-          <p>&copy; 2024 Alex Johnson. All rights reserved.</p>
+        <div className="border-t border-slate-600 dark:border-slate-700 mt-8 pt-8 text-center text-slate-300 dark:text-slate-400">
+          <p>&copy; 2024 Farazul Hoda. All rights reserved.</p>
         </div>
       </div>
     </footer>

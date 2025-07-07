@@ -9,22 +9,22 @@ import Footer from "@/components/footer";
 
 export default function Portfolio() {
   useEffect(() => {
-    document.title = "Alex Johnson - Creative Designer & Developer";
+    document.title = "Farazul Hoda - Cybersecurity Professional & Network Administrator";
     
     // Add meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Creative designer and developer specializing in modern web design and user-centered development. View my portfolio and get in touch.');
+      metaDescription.setAttribute('content', 'Cybersecurity professional specializing in vulnerability management, penetration testing, cloud security, and threat intelligence. Certified in CCNA, CompTIA Network+, AWS.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Creative designer and developer specializing in modern web design and user-centered development. View my portfolio and get in touch.';
+      meta.content = 'Cybersecurity professional specializing in vulnerability management, penetration testing, cloud security, and threat intelligence. Certified in CCNA, CompTIA Network+, AWS.';
       document.head.appendChild(meta);
     }
   }, []);
 
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-slate-50 dark:bg-gray-900 transition-colors duration-300">
       <Navigation />
       <HeroSection />
       <AboutSection />

@@ -60,7 +60,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 contact-gradient">
+    <section id="contact" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-gray-800 dark:to-gray-700">
       <div className="container mx-auto px-6">
         <motion.div
           initial="initial"
@@ -68,11 +68,11 @@ export default function ContactSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <motion.h2 variants={fadeInUp} className="text-4xl font-bold text-primary mb-4">
+          <motion.h2 variants={fadeInUp} className="text-4xl font-bold text-primary dark:text-white mb-4">
             Let's Work Together
           </motion.h2>
-          <motion.p variants={fadeInUp} className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Have a project in mind? I'd love to hear about it and discuss how we can bring your vision to life.
+          <motion.p variants={fadeInUp} className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+            Have a security project in mind? I'd love to discuss how we can strengthen your organization's defenses.
           </motion.p>
         </motion.div>
 
@@ -86,17 +86,17 @@ export default function ContactSection() {
           >
             <div className="space-y-6">
               {[
-                { icon: Mail, label: "Email", value: "alex@example.com" },
-                { icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },
-                { icon: MapPin, label: "Location", value: "San Francisco, CA" },
+                { icon: Mail, label: "Email", value: "imfaraz730@outlook.com" },
+                { icon: Phone, label: "Phone", value: "+1 (312) 912-4504" },
+                { icon: MapPin, label: "Location", value: "United States" },
               ].map((contact) => (
                 <div key={contact.label} className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center">
                     <contact.icon className="text-accent" size={20} />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-primary">{contact.label}</h4>
-                    <p className="text-slate-600">{contact.value}</p>
+                    <h4 className="font-semibold text-primary dark:text-white">{contact.label}</h4>
+                    <p className="text-slate-600 dark:text-slate-300">{contact.value}</p>
                   </div>
                 </div>
               ))}
@@ -114,12 +114,12 @@ export default function ContactSection() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="bg-white p-8 rounded-xl shadow-lg"
+            className="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-lg"
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
-                  <Label htmlFor="firstName" className="text-sm font-medium text-slate-700 mb-2">
+                  <Label htmlFor="firstName" className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
                     First Name
                   </Label>
                   <Input
@@ -129,11 +129,11 @@ export default function ContactSection() {
                     onChange={handleChange}
                     placeholder="John"
                     required
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors duration-300"
+                    className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors duration-300"
                   />
                 </div>
                 <div>
-                  <Label htmlFor="lastName" className="text-sm font-medium text-slate-700 mb-2">
+                  <Label htmlFor="lastName" className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
                     Last Name
                   </Label>
                   <Input
@@ -143,12 +143,12 @@ export default function ContactSection() {
                     onChange={handleChange}
                     placeholder="Doe"
                     required
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors duration-300"
+                    className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors duration-300"
                   />
                 </div>
               </div>
               <div>
-                <Label htmlFor="email" className="text-sm font-medium text-slate-700 mb-2">
+                <Label htmlFor="email" className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
                   Email
                 </Label>
                 <Input
@@ -159,11 +159,11 @@ export default function ContactSection() {
                   onChange={handleChange}
                   placeholder="john@example.com"
                   required
-                  className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors duration-300"
+                  className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors duration-300"
                 />
               </div>
               <div>
-                <Label htmlFor="subject" className="text-sm font-medium text-slate-700 mb-2">
+                <Label htmlFor="subject" className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
                   Subject
                 </Label>
                 <Input
@@ -171,13 +171,13 @@ export default function ContactSection() {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  placeholder="Project Discussion"
+                  placeholder="Security Project Discussion"
                   required
-                  className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors duration-300"
+                  className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors duration-300"
                 />
               </div>
               <div>
-                <Label htmlFor="message" className="text-sm font-medium text-slate-700 mb-2">
+                <Label htmlFor="message" className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
                   Message
                 </Label>
                 <Textarea
@@ -185,10 +185,10 @@ export default function ContactSection() {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Tell me about your project..."
+                  placeholder="Tell me about your security needs..."
                   rows={4}
                   required
-                  className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors duration-300 resize-none"
+                  className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-colors duration-300 resize-none"
                 />
               </div>
               <Button

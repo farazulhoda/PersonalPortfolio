@@ -99,7 +99,18 @@ This is a modern portfolio website built with React and Express.js, featuring a 
 ## Changelog
 
 - July 07, 2025. Initial setup
+- July 07, 2025. Built personalized portfolio for Farazul Hoda with cybersecurity focus
+- July 07, 2025. Implemented dark/light theme toggle functionality
+- July 07, 2025. Updated all content to reflect Farazul's professional background and skills
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+
+## Portfolio Content
+- **Professional Focus**: Cybersecurity, Network Administration, Vulnerability Management
+- **Key Skills**: Penetration Testing, Cloud Security (AWS, Azure, GCP), Threat Intelligence
+- **Tools Expertise**: Splunk, CrowdStrike, Microsoft Sentinel, Wireshark, Microsoft Intune
+- **Contact**: imfaraz730@outlook.com, +1 (312) 912-4504
+- **Social**: LinkedIn (farazul-hoda), GitHub (farazulhoda)
+- **Achievement**: 95% incident detection rate, 30% reduction in potential breaches
