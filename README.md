@@ -184,7 +184,6 @@ The contact form integrates with:
 ## 📱 Contact Information
 
 - **Email**: imfaraz730@outlook.com
-- **Phone**: +1 (312) 912-4504
 - **LinkedIn**: [farazul-hoda](https://www.linkedin.com/in/farazul-hoda)
 - **GitHub**: [farazulhoda](https://github.com/farazulhoda)
 
